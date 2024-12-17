@@ -1,30 +1,48 @@
 # JapanCompanyFilter
 
-An automated tool to filter Japanese companies based on their review scores from OpenWork and En-Tenshoku (エン転職).
+An automated tool to filter Japanese companies based on their review scores from OpenWork and En-Tenshoku (エン転職), with the ability to automatically fetch company lists from Green Japan.
 
 ## Overview
-This tool automatically retrieves and filters companies based on their review scores from OpenWork and En-Tenshoku, helping job seekers identify companies with good employee satisfaction ratings efficiently.
+This tool has two main functions:
+1. Automatic company list extraction from Green Japan
+2. Company filtering based on review scores from OpenWork and En-Tenshoku
 
 ## Key Features
+### Green Japan List Extraction
+- Automatically extracts company names from Green Japan search results
+- Saves extracted company lists automatically
+- Supports automatic scrolling through multiple pages
+
+### Company Filtering
 - Automatic retrieval of OpenWork overall ratings
 - Automatic retrieval of En-Tenshoku review scores
 - Company filtering based on specified score thresholds
 - Automatic saving of filtered results
 
 ## How to Use
-1. Prepare a text file with company names (one per line)
-2. Launch the application and click "Select File"
-3. Enter minimum OpenWork score (e.g., 3.5)
-4. Enter minimum En-Tenshoku score (e.g., 3.5)
-5. Click "Start Filtering"
-6. Results will be automatically saved when processing is complete
+### Step 1: Get Company List from Green Japan
+1. Launch the application
+2. Click "Start Green Japan Search"
+3. Green Japan search page will open
+4. Set your desired search criteria
+5. Click "Start Scraping"
+6. Company list will be automatically saved
+
+### Step 2: Filter Companies
+1. Click "Select File" and choose the file saved from Step 1 (or any existing company list)
+2. Enter minimum OpenWork score (e.g., 3.5)
+3. Enter minimum En-Tenshoku score (e.g., 3.5)
+4. Click "Start Filtering"
+5. Results will be automatically saved when processing is complete
 
 ## Output
-Filtered results are saved in the same directory as the input file, named "[original_filename]_FilteredbyOpenworkAndEngage.txt"
+- Green Japan results: Saved as "company_names.txt"
+- Filtering results: Saved as "[original_filename]_FilteredbyOpenworkAndEngage.txt"
 
 ## Requirements
 - Internet connection
 - Chrome browser installed
+- Search criteria on Green Japan must be set manually
 - Processing large lists of companies may take some time
 
 ## About the Developer
