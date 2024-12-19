@@ -7,6 +7,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+!dist/*.exe
 downloads/
 eggs/
 .eggs/
@@ -23,6 +24,7 @@ wheels/
 # PyInstaller
 build/
 dist/
+!dist/*.exe
 *.spec
 
 # Virtual Environment
